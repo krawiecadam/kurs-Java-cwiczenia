@@ -15,9 +15,9 @@ public class Main {
         System.out.println(year1);
         System.out.println(year2);
         if ((year1 == 0 && year2 > 0) || (year3 == 0))  {
-            System.out.println("Podany rok jest przestępny");
+            System.out.println("Podany rok jest przestępny.");
         } else {
-            System.out.println("Podany rok nie jest przestępny");
+            System.out.println("Podany rok nie jest przestępny.");
         }
         }
         }
