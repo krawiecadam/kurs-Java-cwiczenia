@@ -3,28 +3,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int score = 10;
-
-        System.out.println("Podaj swój wynik: ");
-            score = scanner.nextInt();
-        while (score > 100 || score <0) {
-
-            System.out.println("Podałeś wynik spoza zakresu 0-100. Podaj wynik jeszcze raz:");
-            score = scanner.nextInt();
+        int a = 4;
+        int b = 100;
+        int c = 400;
+        System.out.println("Podaj rok: ");
+        int year = scanner.nextInt();
+        System.out.println("Podany przez Ciebie rok to: "+ year + ".");
+        int year1= year % a;
+        int year2= year % b;
+        int year3= year % c;
+        System.out.println(year1);
+        System.out.println(year2);
+        if ((year1 == 0 && year2 > 0) || (year3 == 0))  {
+            System.out.println("Podany rok jest przestępny");
+        } else {
+            System.out.println("Podany rok nie jest przestępny");
         }
-        System.out.println("Twój wynik to: " + score + "%.");
-        if (score >= 90) {
-            System.out.println("Twoja ocena to: 5. Gratulacje !");
-        } else if ((score >= 80 )) {
-            System.out.println("Twoja ocena to: 4. Not bad ;)");
-
-        } else if ((score >= 70 )) {
-            System.out.println("Twoja ocena to: 3. Tak sobie...");
-        } else if ((score >= 60 )) {
-            System.out.println("Twoja ocena to: 2. Oj słabiutko...");
-        } else  {
-            System.out.println("Twoja ocena to: 1. Do widzenia.");
         }
-    }
+        }
 
-}
+
+
