@@ -12,10 +12,12 @@ public class Main {
         String pierwszaLiterka;
         String ostatniaLiterka;
         int prawda=-1;
-        for (int i=1; i<=text.length(); i++) {
-            letter = scanner.next();
-            chart.add(letter);
+        char a;
 
+        for (int i=0; i<text.length(); i++) {
+             a = text.charAt(i);
+             String b = Character.toString(a);
+             chart.add(b);
         }
 
         for (int i1=0; i1<=((text.length()/2)); i1++) {
@@ -35,6 +37,8 @@ public class Main {
         } else {
             System.out.println("nie ok");
         }
+
+
     }
     }
 
